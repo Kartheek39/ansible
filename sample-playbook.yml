@@ -1,0 +1,5 @@
+- name: sample playbook
+  host:
+   - all
+    - degub:
+       msg: hello world
