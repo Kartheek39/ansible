@@ -1,9 +1,12 @@
 - name: demo on variable using ansible
   hosts: all
   vars:
-   URL: google.come
+   URL1: play.google.come
    
    task:
-    - name: print varible
+    - name: print varible from play
       debug:
-        msg: URL = {{URL}}
+        msg: URL = {{URL1}}
+    - name: print variable form file
+      debug:
+        msg: URL = {{URL2}}
