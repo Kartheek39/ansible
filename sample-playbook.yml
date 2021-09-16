@@ -1,5 +1,6 @@
 - name: sample playbook
   host:
    - all
-    - degub:
+  tasks:
+   - degub:
        msg: hello world
