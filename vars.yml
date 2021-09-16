@@ -27,5 +27,7 @@
   - name: procedence check in variables
     debug:
       msg: URL = {{URL}}
+    roles:
+     - sample
       
       
