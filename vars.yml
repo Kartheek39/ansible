@@ -1,0 +1,9 @@
+- name: demo on variable using ansible
+  hosts: all
+  vars:
+   URL: google.come
+   
+   task:
+    - name: print varible
+      debug:
+        msg: URL = {{URL}}
