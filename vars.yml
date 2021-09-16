@@ -2,6 +2,7 @@
   hosts: all
   vars:
     URL1: play.google.come
+    URL: play.google.com
   vars_files:
     - vars-1.yml
   tasks:
@@ -14,6 +15,7 @@
   - name: task level variable
     vars:
       URL3: task.google.come
+      URL: task.google.com
     debug:
       msg: URL = {{URL3}}
   - name: host level variables
@@ -22,4 +24,8 @@
   - name: commanline level variables
     debug:
       msg: URL = {{URL5}}
+  - name: procedence check in variables
+    debug:
+      msg: URL = {{URL}}
+      
       
