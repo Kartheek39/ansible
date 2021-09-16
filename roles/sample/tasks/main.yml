@@ -3,4 +3,4 @@
     msg: hello world
 - name: print defaults
   debug:
-    msg: URL = {{URL}}
+    msg: URL = {{URL6}}
