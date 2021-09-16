@@ -16,3 +16,7 @@
       URL3: task.google.come
     debug:
       msg: URL = {{URL3}}
+  - name: host level variables
+    debug:
+      msg: URL = {{URL4}}
+      
