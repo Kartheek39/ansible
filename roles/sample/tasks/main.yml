@@ -1,3 +1,6 @@
 - name: hello world form role
   debug:
     msg: hello world
+- name: print defaults
+  debug:
+    msg: URL = {{URL}}
