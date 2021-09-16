@@ -19,4 +19,7 @@
   - name: host level variables
     debug:
       msg: URL = {{URL4}}
+  - name: commanline level variables
+    debug:
+      msg: URL = {{URL5}}
       
