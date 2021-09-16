@@ -2,7 +2,7 @@
   hosts: all
   vars:
     URL1: play.google.come
-  vars.files:
+  vars_files:
     - vars-1.yml
   task:
   - name: print varible from play
