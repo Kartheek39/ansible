@@ -14,5 +14,5 @@
   - name: task level variable
     vars:
       URL3: task.google.come
-    degug:
+    debug:
       msg: URL = {{URL3}}
