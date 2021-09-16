@@ -4,7 +4,7 @@
     URL1: play.google.come
   vars_files:
     - vars-1.yml
-  task:
+  tasks:
   - name: print varible from play
     debug:
       msg: URL = {{URL1}}
