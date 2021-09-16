@@ -2,5 +2,5 @@
   hosts:
    - all
   tasks:
-   - degub:
+   - debug:
        msg: hello world
