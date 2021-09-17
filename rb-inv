@@ -1,6 +1,6 @@
-[FRONTEND1]
+[FRONTEND]
 fronted.roboshop.internal
-[MONGODB1]
+[MONGODB]
 mongodb.roboshop.internal
 [CATALOGUE]
 catalogue.roboshop.internal
