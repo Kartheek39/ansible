@@ -42,6 +42,8 @@
     - mysql
 - name: roboshop project setup - shipping
   hosts: SHIPPING
+  tags:
+   - shipping
   roles:
     - shipping
 - name: roboshop project setup - rabbitmq
