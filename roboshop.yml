@@ -1,5 +1,5 @@
 - name: roboshop project setup - frontend
-  hosts: FRONTEND
+  hosts: KARTHEEK
   roles:
    - frontend
 - name: roboshop project setup - mongodb
