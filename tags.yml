@@ -2,7 +2,7 @@
   hosts: all
   tasks:
    - name: centos
-     degub:
+     debugub:
        msg: centos
    - name: ubuntu
      debug:
