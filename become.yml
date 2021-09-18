@@ -1,0 +1,11 @@
+- name: demo on become
+  hosts: all
+  become: yes
+    - name:  get user id
+      shell: id
+      register: out
+      
+    - name: print
+      debug:
+        msg: "{{out}}"
+ 
