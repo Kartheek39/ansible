@@ -1,6 +1,6 @@
 - name: demo on become
   hosts: all
-  become:
+  become: yes
   tasks:
     - name:  get user id
       shell: id
