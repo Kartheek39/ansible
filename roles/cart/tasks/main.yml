@@ -33,14 +33,14 @@
     path: /home/roboshop/cart
   become_user: roboshop
   
-- name: setup user service file
+- name: setup cart service file
   copy:
    src: systemd.service
-   dest: /etc/systemd/system/user.service
+   dest: /etc/systemd/system/cart.service
    
-- name: start user service
+- name: start cart service
   systemd:
-    name: user
+    name: cart
     state: restarted
     enabled: yes
     daemon_reload: yes
