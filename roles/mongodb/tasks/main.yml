@@ -16,7 +16,7 @@
     
 - name: starting mongodb
   systemd:
-     name: mongodb
+     name: mongod
      state: started
      enabled: yes
      
