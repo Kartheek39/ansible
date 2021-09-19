@@ -1,8 +1,9 @@
 - name: Install NodeJS
   yum:
-   - nodejs
-   - make
-   - gcc-c++
+   name:
+    - nodejs
+    - make
+    - gcc-c++
    
 - name: Add the roboshoop user
   ansible.builtin.user:
