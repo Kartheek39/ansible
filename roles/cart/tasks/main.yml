@@ -20,7 +20,7 @@
     path: /home/roboshop/cart
     state: absent
     
-- name: Copy extracted content to user path
+- name: Copy extracted content to cart path
   ansible.builtin.copy:
     src:  /tmp/cart-main/
     dest: /home/roboshop/cart/
