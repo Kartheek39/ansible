@@ -1,0 +1,23 @@
+- name: Install redis repos
+  yum:
+   name: http://rpms.remirepo.net/enterprise/remi-release-7.rpm 
+   state: present
+   
+- name: Install Redis
+  yum:
+   name: redis
+   enablerepo: remi
+   state: present
+   
+- name: Update conf file
+  ansible.builtin.replace:
+    path: /etc/redis.conf
+    regexp: '127.0.0.1'
+    replace: '0.0.0.0'
+    
+    
+- name: start systemd services
+  systemd:
+    name: redis
+    state: started
+    enabled: yes
