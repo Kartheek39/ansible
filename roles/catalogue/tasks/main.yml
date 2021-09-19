@@ -5,9 +5,9 @@
     - make
     - gcc-c++
    
-- name: Add the roboshoop user
+- name: Add the roboshop user
   ansible.builtin.user:
-    name: roboshoop
+    name: roboshop
     
 - name: Download catalogue arhieve
   ansible.builtin.unarchive:
