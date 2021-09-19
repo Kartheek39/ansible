@@ -1,0 +1,28 @@
+- name: Install NodeJS
+  yum:
+   - nodejs
+   - make
+   - gcc-c++
+   
+- name: Add the roboshoop user
+  ansible.builtin.user:
+    name: roboshoop
+    
+- name: Download catalogue arhieve
+  ansible.builtin.unarchive:
+    src:  "https://github.com/roboshop-devops-project/catalogue/archive/main.zip"
+    dest: /tmp
+    remote_src: yes
+    
+- name: remove old content
+  ansible.builtin.file:
+    path: /home/roboshop/catalogue
+    state: absent
+    
+- name: Copy extracted content to catalogue path
+  ansible.builtin.copy:
+    src:  /tmp/catalogue-main/
+    dest: /home/roboshop/catalogue/
+    remote_src: yes
+    owner: roboshoop
+    group: roboshoop
