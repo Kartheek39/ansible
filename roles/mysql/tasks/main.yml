@@ -7,11 +7,13 @@
   yum:
     name: mariadb-libs
     state: absent
+    sudo: yes
     
 - name: Installing mysql community
   yum: 
    name: mysql-community-server
    state: present
+   sudo: yes
    
 - name: starting mysql services
   systemd:
