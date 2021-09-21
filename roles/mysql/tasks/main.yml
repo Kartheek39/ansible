@@ -12,6 +12,7 @@
   yum:
     name: mysql-community-server
     state: present
+    become: yes
 
 - name: Start MySQL Service
   systemd:
