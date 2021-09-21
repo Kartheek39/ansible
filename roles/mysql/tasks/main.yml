@@ -20,8 +20,8 @@
     enabled: yes
     
 - name: Grab default password
-   shell: grep 'A temporary password' /var/log/mysqld.log | awk '{print $NF}'
-   register: default_pass
+  shell: grep 'A temporary password' /var/log/mysqld.log | awk '{print $NF}'
+  register: default_pass
    
 - name: reset SQL files
   copy:
