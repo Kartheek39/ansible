@@ -12,6 +12,8 @@
   yum:
     name: mysql-community-server
     state: present
+    login_user: root
+
 
 - name: Start MySQL Service
   systemd:
