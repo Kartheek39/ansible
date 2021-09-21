@@ -5,8 +5,8 @@
     
 - name: Removing mariadb libs
   yum:
-   name: mariadb-libs
-   state: absent
+    name: mariadb-libs
+    state: absent
    
 - name: Installing mysql community
   yum: 
