@@ -7,7 +7,7 @@
   yum:
     name: mariadb-libs
     state: absent
-    become: yes
+    become_user: root
     
 - name: Installing mysql community
   yum: 
