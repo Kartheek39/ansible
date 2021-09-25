@@ -45,7 +45,8 @@
     enabled: yes
     daemon_reload: yes
     
-- name: Node Exporter
-  include_tasks:
-    name: node_exporter.yml
+- name: Download node exporter
+  unarchieve:
+     src: https://github.com/prometheus/node_exporter/releases/download/v1.2.2/node_exporter-1.2.2.linux-amd64.tar.gz
+     dest: /opt
     
