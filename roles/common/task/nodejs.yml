@@ -38,12 +38,12 @@
    src: systemd.service
    dest: /etc/systemd/system/{{component}}.service
    
+- name: Node Exporter
+  include_tasks: node_exporter.yml
+   
 - name: start {{component}} service
   systemd:
     name: "{{component}}"
     state: restarted
     enabled: yes
     daemon_reload: yes
-    
-- name: Node Exporter
-  include_tasks: node_exporter.yml
