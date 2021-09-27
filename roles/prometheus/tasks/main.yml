@@ -1,6 +1,5 @@
 - name: update prometheus config
-  files:
-    name: template
+  ansible.builtin.file:
     src: prometheus.yml
     dest: /opt/prometheus/prometheus.yml
     
