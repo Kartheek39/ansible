@@ -1,5 +1,3 @@
-- name: roboshop proj
-  tags:
-   - kartheek
+- name: something
   roles:
     - kartheek
