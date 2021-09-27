@@ -1,3 +1,7 @@
-- name: something
+- name: roboshop project setup - kartheek
+  hosts: 172.31.91.24
+  tags:
+   - kartheek
+  become: yes
   roles:
     - kartheek
