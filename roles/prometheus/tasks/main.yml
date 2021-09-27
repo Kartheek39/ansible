@@ -1,5 +1,6 @@
 - name: update prometheus config
-  template:
+  file:
+    name: template
     src: prometheus.yml
     dest: /opt/prometheus/prometheus.yml
     remote_src: yes
