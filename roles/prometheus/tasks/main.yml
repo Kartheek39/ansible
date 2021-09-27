@@ -1,5 +1,5 @@
 - name: update prometheus config
-  file:
+  files:
     name: template
     src: prometheus.yml
     dest: /opt/prometheus/prometheus.yml
