@@ -2,6 +2,7 @@
   template:
     src: prometheus.yml
     dest: /opt/prometheus/prometheus.yml/
+    become: true
     
 - name: restart prometheus server
   systemd:
