@@ -1,7 +1,7 @@
 - name: update prometheus config
   template:
     src: prometheus.yml
-    dest: /opt/prometheus/prometheus.yml
+    dest: /opt/prometheus/prometheus.yml/
     
 - name: restart prometheus server
   systemd:
