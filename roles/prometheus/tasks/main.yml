@@ -2,7 +2,7 @@
   copy:
     src: prometheus.yml
     dest: /opt/prometheus/prometheus.yml
-    become: true
+    remote_src: yes
     
 - name: restart prometheus server
   systemd:
