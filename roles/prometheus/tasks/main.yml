@@ -1,7 +1,7 @@
 - name: update prometheus config
-  template:
+  copy:
     src: prometheus.yml
-    dest: /opt/prometheus/prometheus.yml/
+    dest: /opt/prometheus/prometheus.yml
     become: true
     
 - name: restart prometheus server
