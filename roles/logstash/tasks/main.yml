@@ -1,0 +1,10 @@
+- name: copy logstach config file
+  copy:
+    src: logstash.confi
+    dest: /etc/logstash/conf.d/logstash.conf
+
+- name: restart logstash service
+  systemd:
+    name: logstash
+    state: restart
+    enabled: yes
