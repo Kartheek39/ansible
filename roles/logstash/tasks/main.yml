@@ -1,6 +1,6 @@
 - name: copy logstach config file
   copy:
-    src: logstash.confi
+    src: logstash.conf
     dest: /etc/logstash/conf.d/logstash.conf
 
 - name: restart logstash service
