@@ -6,5 +6,5 @@
 - name: restart logstash service
   systemd:
     name: logstash
-    state: restart
+    state: restarted
     enabled: yes
