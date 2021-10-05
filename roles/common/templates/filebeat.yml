@@ -6,7 +6,7 @@ filebeat.inputs:
   enabled: true
   json.keys_under_root: true
   paths:
-    - /var/log/{{COMPONENT}}.log
+    - /var/log/{{component}}.log
 
 
 # ---------------------------- Elasticsearch Output ----------------------------
