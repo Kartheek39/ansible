@@ -11,7 +11,7 @@
 - name: Install filebeat
   yum:
     name: filebeat
-    state: present
+    state: latest
     
 - name: Start Filebeat service
   systemd:
