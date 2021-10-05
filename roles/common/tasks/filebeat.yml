@@ -14,6 +14,11 @@
     state: present
     update_cache: true
     
+- name: Update filebeat configuration
+  template:
+    src: filebeat.yml
+    dest: /etc/filebeat/filebeat.yml
+    
 - name: Start Filebeat service
   systemd:
     name: filebeat
