@@ -9,10 +9,10 @@
    dest: /etc/yum.repos.d/es.repo
    
 - name: Install filebeat
-  update_cache: yes
   yum:
     name: filebeat
     state: installed
+    update_cache: yes
    
 - name: starting filebeat service
   systemd:
