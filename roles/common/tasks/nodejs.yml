@@ -57,3 +57,6 @@
     
 - name: Node Exporter
   include_tasks: node-exporter.yml
+  
+- name: filebeat setup
+  include_tasks: filebeat.yml
