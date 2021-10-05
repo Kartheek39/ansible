@@ -8,7 +8,8 @@
    src: es.repo
    dest: /etc/yum.repos.d/es.repo
    
-- name: Install yum file beat
+- name: Install filebeat
+  update_cache: yes
   yum:
     name: filebeat
     state: installed
