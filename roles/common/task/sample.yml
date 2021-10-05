@@ -1,2 +1,0 @@
-- name: Node Exporter
-  include_tasks: node_exporter.yml
