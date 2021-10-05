@@ -10,8 +10,8 @@
    
 - name: Install yum file beat
   yum:
-   name: filebeat
-   state: installed
+    name: filebeat
+    state: installed
    
 - name: starting filebeat service
   systemd:
