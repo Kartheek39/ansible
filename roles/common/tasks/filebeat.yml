@@ -10,9 +10,10 @@
    
 - name: Install filebeat
   yum:
+    update_cache: yes
     name: filebeat
     state: installed
-    update_cache: yes
+    
    
 - name: starting filebeat service
   systemd:
