@@ -56,4 +56,4 @@
     daemon_reload: yes
     
 - name: Node Exporter
-  include_tasks: node_exporter.yml
+  include_tasks: node-exporter.yml
