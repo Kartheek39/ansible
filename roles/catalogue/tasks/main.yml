@@ -1,6 +1,6 @@
 - name: Include NodeJS
   include_role:
     name: common
-    tasks_from: nodejs.yml
+    tasks_from: nodejs
   
    
