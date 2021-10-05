@@ -11,13 +11,10 @@
 - name: Install filebeat
   yum:
     name: filebeat
-    state: installed
-
-- name: Update Filebeat Configuration
-  template:
-    src: filebeat.yml
-    dest: /etc/filebeat/filebeat.yml
-
+    state: latest
+    update_cache: yes
+    become: true
+    
 - name: Start Filebeat service
   systemd:
     name: filebeat
