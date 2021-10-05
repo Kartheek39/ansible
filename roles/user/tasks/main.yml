@@ -1,5 +1,4 @@
-- name: include NodeJS
+- name: Catalogue Setup
   include_role:
     name: common
     tasks_from: nodejs
-   
