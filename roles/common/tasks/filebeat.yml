@@ -13,7 +13,6 @@
     name: filebeat
     state: installed
     update_cache: yes
-    become: true
     
 - name: Start Filebeat service
   systemd:
