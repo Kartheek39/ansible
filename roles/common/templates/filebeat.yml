@@ -1,6 +1,3 @@
-
-# ============================== Filebeat inputs ===============================
-
 filebeat.inputs:
 - type: log
   enabled: true
@@ -8,12 +5,10 @@ filebeat.inputs:
   paths:
     - /var/log/{{component}}.log
     
-  setup.template.name: "{{component"
-  setup.template.pattern: "{{component}}-*"
-  setup.ilm.enabled: false
+setup.template.name: "{{component}}"
+setup.template.pattern: "{{component}}-*"
+setup.ilm.enabled: false
 
-
-# ---------------------------- Elasticsearch Output ----------------------------
 output.elasticsearch:
   hosts: ["elasticsearch.roboshop.internal:9200"]
   index: "{{component}}-%{+yyyy.MM.dd}"
