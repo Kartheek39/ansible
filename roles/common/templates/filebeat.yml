@@ -7,12 +7,17 @@ filebeat.inputs:
   json.keys_under_root: true
   paths:
     - /var/log/{{component}}.log
+    
+setup.template.name: "{{component"
+setup.template.pattern: "{{component}}-*"
+setup.ilm.enabled: false
 
 
 # ---------------------------- Elasticsearch Output ----------------------------
 output.elasticsearch:
   # Array of hosts to connect to.
   hosts: ["elasticsearch.roboshop.internal:9200"]
+  index: "{{component}}-%{+yyyy.MM.dd}"
 
   
 # ------------------------------ Logstash Output -------------------------------
