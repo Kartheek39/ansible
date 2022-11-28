@@ -1,0 +1,14 @@
+---
+
+- name: For copying files
+  hosts: all
+  become: true
+
+  tasks:
+    - name: copy file
+      ansible.builtin.copy:
+        src: /home/kartheek/ansible/Practice/copyfile
+        dest: /home/kartheek
+        owner: kartheek
+        group: root
+        mode: '0700'
