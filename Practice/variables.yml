@@ -4,13 +4,13 @@
   hosts: all
   become: true
   vars:
-     dest = /home/kartheek
+     dest_path : /home/kartheek
 
   tasks:
     - name: Copy file with owner and permissions
       ansible.builtin.copy:
         src: /home/kartheek/ansible/Practice/copyfile1
-        dest: "{{ dest }}"
+        dest: "{{ dest_path }}"
         owner: kartheek 
         group: root
         mode: '0700'
