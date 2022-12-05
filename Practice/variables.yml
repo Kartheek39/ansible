@@ -10,7 +10,7 @@
     - name: Copy file with owner and permissions
       ansible.builtin.copy:
         src: /home/kartheek/ansible/Practice/copyfile1
-        dest: "{{ dest }}""
+        dest: "{{ dest }}"
         owner: kartheek 
         group: root
         mode: '0700'
