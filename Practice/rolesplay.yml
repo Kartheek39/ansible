@@ -14,5 +14,5 @@
     - name: copy the file
       tags:
         - copy
-      roles: 
-        Copy 
+      roles:
+        - Copy
