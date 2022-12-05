@@ -1,18 +1,14 @@
----
-
-- name: checking roles
+- name: http service install
   hosts: all
-  become: true
-
-  tasks:
-    - name: install the httpd
-      tags:
-        - httpd
-      roles:
-        - httpd
-
-    - name: copy the file
-      tags:
-        - copy
-      roles:
-        - Copy
+  tags:
+   - httpd
+  become: yes
+  roles:
+   - httpd
+- name: copy file to the host
+  hosts: all
+  tags:
+   - copy
+  become: yes
+  roles:
+    - Copy
