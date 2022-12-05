@@ -1,0 +1,7 @@
+- name: copy the file to managed host
+  ansible.builtin.copy:
+        src: /home/kartheek/ansible/Practice/copyfile2
+        dest: /home/kartheek
+        owner: kartheek 
+        group: root
+        mode: '0700'
